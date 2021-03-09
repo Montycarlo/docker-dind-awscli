@@ -10,4 +10,5 @@ RUN \
     python3 \
     py3-pip && \
     pip install --upgrade pip six awscli s3cmd && \
-    rm /var/cache/apk/*
+    rm /var/cache/apk/* && \
+    mkdir -p /root/.aws
