@@ -7,7 +7,7 @@ RUN \
     git  \
     groff \
     jq \
+    python3 \
     py3-pip && \
-    pip install --upgrade pip awscli s3cmd && \
-    apk --purge -v del py3-pip && \
+    pip install --upgrade pip six awscli s3cmd && \
     rm /var/cache/apk/*
